@@ -3,103 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sign up page</title>
+  <title>Wedding & Event Planner</title>
   <style>
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
     body {
-      background-color: lightgreen;
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
     }
 
-    h1 {
-      text-align: center;
-      margin: 20px;
-      color: darkblue;
-    }
-
-    form {
-      max-width: 500px;
-      width: 90%;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: rgb(189, 215, 18);
-      color: rgb(206, 20, 135);
+    header {
       border: 2px solid black;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    label {
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #555;
-    }
-
-    button {
-      padding: 10px;
-      background-color: darkblue;
+      background-color: chocolate;
       color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
     }
 
-    button:hover {
-      background-color: rgb(0, 0, 110);
+    nav.one {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background-color: rgb(209, 169, 11);
+      padding: 10px;
+      border: 1px solid black;
+      position: sticky;
+      top: 80px;
+      z-index: 999;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.2em;
-        margin: 10px;
+    nav a {
+      text-decoration: none;
+      color: black;
+    }
+
+    nav a h3 {
+      margin: 0;
+    }
+
+    section {
+      background-color: rgb(219, 195, 163);
+      padding: 20px;
+    }
+
+    p, h2 {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .two {
+      line-height: 1.8;
+    }
+
+    footer {
+      border: 2px solid black;
+      background-color: rgb(78, 207, 18);
+      color: black;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      nav.one {
+        flex-direction: column;
+        gap: 10px;
       }
 
-      form {
-        padding: 15px;
+      .container {
+        padding: 10px;
+      }
+
+      header h1 {
+        font-size: 20px;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Fill this form, within 24hrs our team will contact you...</h1>
-  <form>
-    <div class="form-group">
-      <label for="username">Username:</label>
-      <input id="username" type="text" placeholder="Enter username" />
+
+  <header>
+    <h1>Welcome to Annu Light & Sound – Your Complete Wedding & Event Planner</h1>
+  </header>
+
+  <nav class="one">
+    <a href="home.html"><h3>Home</h3></a>
+    <a href="Login.html"><h3>Login</h3></a>
+    <a href="Book.html"><h3>Book</h3></a>
+    <a href="signup.html"><h3>Signup</h3></a>
+  </nav>
+
+  <section>
+    <div class="container">
+      <p>
+        At Annu Wedding Planner, we bring your special moments to life with stunning decor, seamless arrangements, and unforgettable experiences.
+        Whether it’s a grand wedding, a vibrant birthday party, or an elegant reception, we specialize in every type of event decoration.
+        From luxurious stage setups and bridal entry décor to elegant lighting, powerful sound systems, air coolers, and custom DJ floors – we have everything you need to make your celebration extraordinary.
+      </p>
+
+      <p>
+        Our dedicated team ensures every detail is managed professionally and beautifully, customizing every service to match your budget and vision.
+        We also offer top-notch catering services to complement your event with delicious food and perfect hospitality.
+        Let us turn your dream celebration into reality – stylish, stress-free, and spectacular.
+      </p>
+
+      <p>
+        📍 <strong>Address:</strong> Annu Light & Sound, Gomoh Road, Harina<br>
+        📞 <strong>Contact:</strong> 7782XXXXXX
+      </p>
+
+      <h2>Event Budget Planning</h2>
+
+      <p class="two">
+        Budget planning is one of the most important parts of any celebration. We offer flexible and transparent budgeting solutions for all kinds of events—be it a traditional wedding, a fun birthday bash, or a vibrant Haldi ceremony.
+        <br><br>
+        • <strong>Wedding Ceremony:</strong> Venue booking, mandap setup, stage decoration, catering, bride and groom styling, invitation cards, and rituals coordination. <br>
+        • <strong>Haldi & Mehendi Function:</strong> Colorful decor, floral jewelry, seating arrangements, light snacks, music, and event coordination. <br>
+        • <strong>Birthday Party:</strong> Venue decoration, balloon arch, cake table setup, return gifts, theme-based props, fun games, and anchor or host service. <br>
+        • <strong>DJ & Sound Setup:</strong> Professional DJ, sound system, disco lights, smoke machine, LED dance floor, and emcee (on request). <br>
+        • <strong>Lighting & Effects:</strong> Fairy lights, chandeliers, ambient lanterns, LED spotlights, entrance lighting, and personalized name displays. <br>
+        • <strong>Photo & Video Services:</strong> Candid photography, traditional shoots, drone coverage, live streaming setup, and photo booth design. <br>
+        • <strong>Hospitality & Guest Care:</strong> Hotel bookings, welcome kits, transportation, valet parking, and reception desk setup. <br>
+        • <strong>Return Gifts & Packaging:</strong> Custom gift boxes, handmade souvenirs, eco-friendly packaging, and guest thank-you cards.
+        <br><br>
+        We provide detailed estimates with multiple package options so you can choose what fits your event and budget. Whether you are planning a small home function or a large-scale wedding, we ensure everything is professionally managed and value for money.
+      </p>
     </div>
-    <div class="form-group">
-      <label for="mobile">Mobile No:</label>
-      <input id="mobile" type="text" placeholder="Enter your mobile no" />
-    </div>
-    <div class="form-group">
-      <label for="address">Address:</label>
-      <input id="address" type="text" placeholder="Enter your address" />
-    </div>
-    <div class="form-group">
-      <label for="function">Function Type:</label>
-      <input id="function" type="text" placeholder="e.g., Marriage, Haldi, Birthday Party..." />
-    </div>
-    <div class="form-group">
-      <label for="date">Function Date:</label>
-      <input id="date" type="date" />
-    </div>
-    <button type="submit">Submit</button>
-  </form>
+  </section>
+
+  <footer>
+    <h3>&copy; 2025 Thank you for visiting.</h3>
+  </footer>
+
 </body>
 </html>

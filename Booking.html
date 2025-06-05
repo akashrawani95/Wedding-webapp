@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign up page</title>
+  <style>
+    body {
+      background-color: lightgreen;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: darkblue;
+    }
+
+    form {
+      width: 400px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: rgb(189, 215, 18);
+      color: rgb(206, 20, 135);
+      border: 2px solid black;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-group {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #555;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: darkblue;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(0, 0, 110);
+    }
+  </style>
+</head>
+<body>
+  <h1>Fill this form, within 24hrs our team will contact you...</h1>
+  <form action="">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input id="username" type="text" placeholder="Enter username" />
+    </div>
+
+    <div class="form-group">
+      <label for="mobile">Mobile No:</label>
+      <input id="mobile" type="text" placeholder="Enter your mobile no" />
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input id="address" type="text" placeholder="Enter your address" />
+    </div>
+
+    <div class="form-group">
+      <label for="function">Function Type:</label>
+      <input id="function" type="text" placeholder="e.g., Marriage, Haldi, Birthday Party..." />
+    </div>
+
+    <div class="form-group">
+      <label for="date">Function Date:</label>
+      <input id="date" type="date" />
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

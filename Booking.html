@@ -3,65 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sign up page</title>
+  <title>Event Booking Form</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: lightgreen;
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
     }
 
     h1 {
       text-align: center;
-      margin-top: 30px;
+      margin: 30px 15px;
       color: darkblue;
     }
 
     form {
-      width: 400px;
-      margin: 30px auto;
-      padding: 30px;
+      width: 90%;
+      max-width: 500px;
+      margin: auto;
       background-color: rgb(189, 215, 18);
-      color: rgb(206, 20, 135);
+      padding: 30px;
+      border-radius: 40px;
       border: 2px solid black;
-      border-radius: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      color: rgb(206, 20, 135);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     .form-group {
-      width: 100%;
       margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
     }
 
     label {
-      margin-bottom: 5px;
+      display: block;
       font-weight: bold;
+      margin-bottom: 8px;
     }
 
     input {
       width: 100%;
-      padding: 8px;
+      padding: 10px;
+      border: 1px solid #444;
       border-radius: 5px;
-      border: 1px solid #555;
+      font-size: 16px;
     }
 
     button {
-      padding: 10px 20px;
+      width: 100%;
+      padding: 12px;
       background-color: darkblue;
       color: white;
+      font-size: 16px;
       border: none;
       border-radius: 10px;
       cursor: pointer;
+      margin-top: 10px;
     }
 
     button:hover {
       background-color: rgb(0, 0, 110);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      form {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -70,27 +84,27 @@
   <form action="">
     <div class="form-group">
       <label for="username">Username:</label>
-      <input id="username" type="text" placeholder="Enter username" />
+      <input id="username" type="text" placeholder="Enter your name" required />
     </div>
 
     <div class="form-group">
       <label for="mobile">Mobile No:</label>
-      <input id="mobile" type="text" placeholder="Enter your mobile no" />
+      <input id="mobile" type="tel" placeholder="Enter your mobile number" pattern="[0-9]{10}" required />
     </div>
 
     <div class="form-group">
       <label for="address">Address:</label>
-      <input id="address" type="text" placeholder="Enter your address" />
+      <input id="address" type="text" placeholder="Enter your address" required />
     </div>
 
     <div class="form-group">
       <label for="function">Function Type:</label>
-      <input id="function" type="text" placeholder="e.g., Marriage, Haldi, Birthday Party..." />
+      <input id="function" type="text" placeholder="e.g., Marriage, Haldi, Birthday Party..." required />
     </div>
 
     <div class="form-group">
       <label for="date">Function Date:</label>
-      <input id="date" type="date" />
+      <input id="date" type="date" required />
     </div>
 
     <button type="submit">Submit</button>
